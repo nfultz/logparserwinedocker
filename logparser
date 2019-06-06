@@ -16,6 +16,6 @@ exit $?
 
 fi
 
-docker run --rm -v `pwd`:/work logparser:latest wine logparser "$*" #2>/dev/null
+docker run --rm -v `pwd`:/work logparser:latest wine logparser "$@"
 
 
