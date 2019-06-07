@@ -44,4 +44,7 @@ There is also support for some aggregation functions.
     Execution time:     0.01 seconds
 
 
+## References
 
+  * https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-xp/bb878032(v=technet.10)
+  * https://blog.codinghorror.com/microsoft-logparser/
