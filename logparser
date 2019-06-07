@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$1" = "build" ]; then
+if [ "$1" = "-b" ]; then
 
 docker build -t "logparser" - <<EOF
 FROM ubuntu:18.04
@@ -10,7 +10,7 @@ RUN cd && wget https://download.microsoft.com/download/f/f/1/ff1819f9-f702-48a5-
 RUN echo 'Copy "C:\\Program Files\\Log Parser 2.2\\LogParser.exe" C:\\Windows\\System32' | wine cmd
 WORKDIR /work
 EOF
-exit $?
+shift
 
 fi
 
